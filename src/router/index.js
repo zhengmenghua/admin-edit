@@ -44,7 +44,7 @@ const router = new VueRouter({
 })
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
-      document.title ='通用后台' + to.meta.title;
+      document.title ='通用后台—' + to.meta.title;
   }
   next()
 })

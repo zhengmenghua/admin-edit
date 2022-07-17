@@ -31,7 +31,7 @@ export default {
         text-align: center;
         font-size: 12px;
         color: #fff;
-        background: rgba(1,1,196,1);
+        background: rgba(2,111,196,1);
         height: 40px;
         .head-tabs{
             display: flex;

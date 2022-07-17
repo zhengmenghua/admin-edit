@@ -108,7 +108,7 @@ export default {
      >h2{   
             line-height: 40px;
             text-align: center;
-            background: rgb(1, 1, 196);
+            background: rgba(2,111,196,1);
             font-size: 16px;
             color: #fff;
         }
@@ -125,6 +125,12 @@ export default {
             width: 25px;
             text-align: center;
             cursor: pointer;
+            &:first-of-type{
+              background-color: rgb(239,175,69);
+            }
+            &:nth-of-type(2){
+              background-color: rgb(93,194,227);
+            }
         }
     }
     .siderBar-menu{

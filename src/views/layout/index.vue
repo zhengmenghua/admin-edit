@@ -26,6 +26,6 @@ export default {
 <style scoped>
   .home{
     display: grid;
-    grid-template-columns: minmax(150px, 20%) 1fr;
+    grid-template-columns: minmax(150px, 15%) 1fr;
   }
 </style>
