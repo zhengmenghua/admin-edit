@@ -1,7 +1,7 @@
 <template>
     <div class="app-head">
         <ul class="head-tabs">
-            <li>首页</li>
+            <li @click="toggleRouter">首页</li>
             <li class="active">下载地址管理</li>
         </ul>
         <div class="head-user">
@@ -21,7 +21,12 @@
 </template>
 <script>
 export default {
-    
+    name:'appHeader',
+    methods:{
+        toggleRouter(){
+            this.$router.push('/')
+        }
+    }
 }
 </script>
 <style scoped lang="scss">

@@ -5,6 +5,8 @@ import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import '@/common/style/reset.css'
+import {timestampToTimeD} from '@/common/tool/time'
+Vue.prototype.$setTimeType = timestampToTimeD;
 Vue.config.productionTip = false
 Vue.use(ElementUI);
 new Vue({

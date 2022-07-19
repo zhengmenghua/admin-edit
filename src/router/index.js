@@ -8,7 +8,6 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'layout',
     meta:{title:''},
     component: layout,
     children:[
@@ -24,12 +23,6 @@ const routes = [
         meta:{title:'下载地址管理'},
         component: ()=>import('@/views/urlEdit'),
       },
-      {
-        path: '*',
-        name: 'notFound',
-        meta:{title:''},
-        component: ()=>import('@/views/notFound'),
-      },
     ],
   },
   {
@@ -37,7 +30,13 @@ const routes = [
     name: 'login',
     meta:{title:'登录'},
     component:login
-  }
+  },
+  {
+    path: '*',
+    name: 'notFound',
+    meta:{title:''},
+    component: ()=>import('@/views/notFound'),
+  },
 ]
 const router = new VueRouter({
   routes

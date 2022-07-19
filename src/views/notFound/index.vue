@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>error:404 notFound!</h1>
+    <h1 style="font-size:24px;font-weight:800">error:404 notFound!</h1>
   </div>
 </template>
 <script>

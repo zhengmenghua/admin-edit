@@ -26,7 +26,9 @@ export default {
   },
   methods:{
     changeRouter(item){
-      this.$router.push(item.path);
+      if(item.path!==this.$route.path){
+        this.$router.push(item.path);
+      }
     }
   }
 }
